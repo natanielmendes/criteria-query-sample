@@ -1,7 +1,14 @@
-== RUNNING HIBERNATE SAMPLE PROJECT ==
+# HIBERNATE SAMPLE
 
-mvn clean package org.codehaus.cargo:cargo-maven2-plugin:run
+<p>This is a sample hibernate application for study propose.</p>
+<p>The goal is to explore persistence layer with hibernate features.</p>
+<p>It uses a memory database (H2) and a embeded jetty web server for simplify runtime tests.</p>
+<p>Just run it in any IDE of your preference. </p>
 
-== ACESSING H2 DATABASE CONSOLE ==
+## RUNNING HIBERNATE SAMPLE PROJECT
 
-Uri for connection: jdbc:h2:mem:dataSource
+ mvn clean package org.codehaus.cargo:cargo-maven2-plugin:run
+
+## ACESSING H2 DATABASE CONSOLE
+
+ Uri for connection: jdbc:h2:mem:dataSource
