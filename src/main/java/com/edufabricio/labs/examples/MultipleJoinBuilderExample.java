@@ -1,5 +1,6 @@
-package com.edufabricio.labs;
+package com.edufabricio.labs.examples;
 
+import com.edufabricio.labs.AccountCriteriaBuilder;
 import com.edufabricio.labs.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,7 +18,7 @@ import java.text.ParseException;
 import java.util.List;
 
 @Service
-public class MockDataBaseService {
+public class MultipleJoinBuilderExample {
 
     @PersistenceContext
     private EntityManager em;
@@ -26,10 +27,12 @@ public class MockDataBaseService {
     private DataSource ds;
 
     @Transactional
-    public void populateDataBaseForTest() throws ParseException {
+    public void executeExample() throws ParseException {
+
         populateAccounts();
         executeCriteriaQueryWrongMultiplesJoins();
         executeCriteriaQueryWithBuilder();
+
     }
 
     private void populateAccounts() {
