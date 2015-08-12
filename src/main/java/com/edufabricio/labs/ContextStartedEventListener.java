@@ -1,5 +1,7 @@
 package com.edufabricio.labs;
 
+import com.edufabricio.labs.examples.CriteriaQueryMaxPeriodExample;
+import com.edufabricio.labs.examples.MultipleJoinBuilderExample;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +16,10 @@ public class ContextStartedEventListener implements
         ApplicationListener<ContextRefreshedEvent> {
 
     @Autowired
-    private MockDataBaseService databaseService;
+    private MultipleJoinBuilderExample multipleJoinBuilderExample;
+
+    @Autowired
+    private CriteriaQueryMaxPeriodExample criteriaQueryMaxPeriodExample;
 
     private static final Logger log = LoggerFactory.getLogger(ContextStartedEventListener.class);
 
@@ -28,7 +33,8 @@ public class ContextStartedEventListener implements
 
         try {
 
-            databaseService.populateDataBaseForTest();
+            //multipleJoinBuilderExample.executeExample();
+            criteriaQueryMaxPeriodExample.executeExample();
 
         } catch (ParseException e) {
             e.printStackTrace();
