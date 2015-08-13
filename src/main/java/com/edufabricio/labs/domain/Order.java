@@ -1,5 +1,6 @@
 package com.edufabricio.labs.domain;
 
+import org.hibernate.annotations.Formula;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -24,6 +25,9 @@ public class Order {
 
     @Column(name = "HOURS_MAX")
     private Integer hoursMax = 24;
+
+    @Formula("DATEADD('HOUR',HOURS_MAX *(-1), CURRENT_DATE())")
+    private Date createSinceLimitHours;
 
 
     public Long getId() {
@@ -58,6 +62,14 @@ public class Order {
         this.hoursMax = hoursMax;
     }
 
+    public Date getCreateSinceLimitHours() {
+        return createSinceLimitHours;
+    }
+
+    public void setCreateSinceLimitHours(Date createSinceLimitHours) {
+        this.createSinceLimitHours = createSinceLimitHours;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
@@ -65,6 +77,7 @@ public class Order {
                 ", value=" + value +
                 ", createdAt=" + createdAt +
                 ", hoursMax=" + hoursMax +
+                ", createSinceLimitHours=" + createSinceLimitHours +
                 '}';
     }
 }

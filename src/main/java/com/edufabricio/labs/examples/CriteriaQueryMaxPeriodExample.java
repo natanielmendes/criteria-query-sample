@@ -124,13 +124,13 @@ public class CriteriaQueryMaxPeriodExample {
 
     private void executeCriteriaQueryByPeriodWithIntegerField() {
 
-        /*
+
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Order> cq = cb.createQuery(Order.class);
         Root<Order> orderRoot = cq.from(Order.class);
 
         cq.select(orderRoot).where(
-                cb.greaterThan(orderRoot.get(Order_.createdAt) , "" )
+                cb.greaterThan(orderRoot.get(Order_.createdAt) , orderRoot.get(Order_.createSinceLimitHours))
         );
 
         TypedQuery<Order> query = em.createQuery(cq);
@@ -143,7 +143,7 @@ public class CriteriaQueryMaxPeriodExample {
         }
 
         System.out.println("\n\n===================================================");
-        */
+
 
     }
 
