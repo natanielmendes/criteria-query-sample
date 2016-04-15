@@ -23,7 +23,7 @@
 	<bean
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" />
 
-	<context:component-scan base-package="com.edufabricio.labs" />
+	<context:component-scan base-package="com.natanielmendes.labs" />
 	<context:annotation-config />
 
 	<tx:annotation-driven transaction-manager="transactionManager"

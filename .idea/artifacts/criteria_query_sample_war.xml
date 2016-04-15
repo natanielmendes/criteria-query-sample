@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="criteria-query-sample:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="criteria-query-sample-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="criteria-query-sample:war exploded" />
+    </root>
+  </artifact>
+</component>

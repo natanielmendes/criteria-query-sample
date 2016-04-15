@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/TriggerAssignedIdentityGenerator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/domain/Company.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/domain/Country.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/domain/Document.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/domain/DocumentType.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/domain/Email.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/domain/EntityStatus.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/domain/Login.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/domain/Perfil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/domain/Phone.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/domain/Portal.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/domain/UserEntity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/usertype/SimNaoCharType.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/usertype/SimNaoVarcharType.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/usertype/TrueFalseCharType.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/natanielmendes/labs/usertype/TrueFalseVarcharType.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
